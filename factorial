@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="here"></div>
+    <script>
+         let number = prompt("Please Enter any number!:");
+         if (!number)
+         {
+            alert("Please enter a number");
+            
+         }
+         else
+         {
+            
+            let fact = 1;
+            for(number; number>=1; number--)
+            {
+                fact = fact*number;
+            }
+            var here = document.getElementById("here");
+            here.innerHTML = fact;
+         }
+         
+    </script>
+</body>
+</html>
